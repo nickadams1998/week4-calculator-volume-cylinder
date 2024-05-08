@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-    <h1>Calculator</h1>
-
-    <form action="/" method="post">
-      <input type="text" name="n1" placeholder="Radius">
-      <input type="text" name="n2" placeholder="Height">
-      <button type="submit" name="submit">Calculate</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Cone Height</title>
+</head>
+<body>
+    <h1>Enter Radius and Volume to calculate the height of a cone</h1>
+    <form action="/calculate-height" method="post">
+        <input type="number" name="radius" placeholder="Enter radius" required>
+        <input type="number" name="volume" placeholder="Enter volume" required>
+        <button type="submit">Calculate Height</button>
     </form>
-
-  </body>
+</body>
 </html>
